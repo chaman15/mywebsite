@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>मेरी Bootstrap वेबसाइट</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 🔷 Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="bootstrap-solid.svg">Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">होम</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">गैलरी</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">संपर्क</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🔶 Hero Section -->
+  <section class="py-5 text-center bg-light">
+    <div class="container">
+      <h1 class="display-4">स्वागत है!</h1>
+      <p class="lead">यह मेरा Bootstrap से बनाया गया वेबसाइट पेज है।</p>
+      <a href="#contact" class="btn btn-primary btn-lg">संपर्क करें</a>
+    </div>
+  </section>
+
+  <!-- 🔁 Carousel Slider -->
+  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Photo 1.jpg" class="d-block w-100" alt="Image 1">
+      </div>
+      <div class="carousel-item">
+        <img src="slide 1.jpeg" class="d-block w-100" alt="Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="slide 5.jpeg" class="d-block w-100" alt="Image 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- 🖼️ Image Gallery -->
+  <section id="gallery" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">हमारी गैलरी</h2>
+      <div class="row">
+        <div class="col-md-4 mb-3"><img src="slide 1.jpeg" class="img-fluid rounded" alt="image 1"></div>
+        <div class="col-md-4 mb-3"><img src="Photo 5.jpg" class="img-fluid rounded" alt="image 2"></div>
+        <div class="col-md-4 mb-3"><img src="Photo 2.jpg" class="img-fluid rounded" alt="image 3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✉️ Contact Form -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">हमसे संपर्क करें</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">नाम</label>
+              <input type="text" class="form-control" id="name" placeholder="अपना नाम दर्ज करें">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">ईमेल</label>
+              <input type="email" class="form-control" id="email" placeholder="आपका ईमेल">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">संदेश</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="अपना संदेश लिखें..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">भेजें</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔻 Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>© 2025 मेरी वेबसाइट | सभी अधिकार सुरक्षित</p>
+  </footer>
+
+  <!-- ✅ Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
